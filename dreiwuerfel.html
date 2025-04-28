@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <title>Herr Leeser - Wahrscheinlichkeit durch Würfel</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="./css/sozstyle.css">
+        <script language="javascript" type="text/javascript" src="./script/SozLib.js"></script>
+        <script language="javascript" type="text/javascript" src="./script/startScriptOfThreeCube.js"></script>
+    </head>
+    <body>
+        <div class="sozmain">
+            <div id="sozhead">
+                <h1 id="Titel">Wahrscheinlichkeit durch Würfel</h1>
+                <div class="menue">
+                    <p class="menue-item_off"><a href="./index.html">Start</a></p>
+                    <p class="menue-item_on"><a href="./mathetools.html">Mathe-Tools</a></p>
+                </div>
+            </div>
+            <div class="sozmiddle">
+                <div id="sozleftside">
+                    <div class="mathmenue">
+                        <p class="mathmenue-item_off"><a href="./multicalcnew.html">Multiplikation</a></p>
+                        <p class="mathmenue-item_off"><a href="./wuerfelwahrscheinlichkeit.html">Wahrscheinlichkeit mit Würfeln</a></p>
+                        <p class="mathmenue-item_off"><a href="./winkelzeichnen.html">Winkelarten</a></p>
+                        <p class="mathmenue-item_on"><a href="./dreiwuerfel.html">3 Würfel</a></p>
+                        <p class="mathmenue-item_off"><a href="./doppelwuerfel.html">Würfelwahrscheinlichkeit mit 2</a></p>
+                    </div>
+                </div>
+                <div id="sozcenter">
+                    <div id="showTableOfProbability"></div>
+                    
+                   
+                    <noscript>Um dies anschauen zu können, muss JavaScript aktiviert sein.</noscript>
+                    <div id="newChallengeButton">
+                        <form name="newChallengeButton"><input type="button" id="getResultButton" value="Würfle die Seiten"/></form>
+                    </div>
+                    <div id="showReloadButton">
+                        <form name="onlyReloadSite"><input type="button" id="sozCubeReloadButton" value="Seite neu laden" onclick="location.reload(true)"/></form>
+                    </div>
+                    <div id="showResultOfProbability"></div>
+                    <script>
+                        cubeStart();
+                    </script>
+                </div>
+                <div id="sozrightside"></div>
+            </div>
+            <div id="sozfoot"></div>
+        </div>
+    </body>
+</html>

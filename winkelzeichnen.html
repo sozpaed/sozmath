@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <title>Herr Leeser - Darstellung von Winkelarten</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="./css/sozstyle.css">
+        <script language="javascript" type="text/javascript" src="./script/SozLib.js"></script>
+        <script language="javascript" type="text/javascript" src="./script/startScriptOfArc.js"></script>
+    </head>
+    <body>
+        <div class="sozmain">
+            <div id="sozhead">
+                <h1 id="Titel">Darstellung von Winkelarten</h1>
+                <div class="menue">
+                    <p class="menue-item_off"><a href="./index.html">Start</a></p>
+                    <p class="menue-item_on"><a href="./mathetools.html">Mathe-Tools</a></p>
+                </div>
+            </div>
+            <div class="sozmiddle">
+                <div id="sozleftside">
+                    <div class="mathmenue">
+                        <p class="mathmenue-item_off"><a href="./multicalcnew.html">Multiplikation</a></p>
+                        <p class="mathmenue-item_off"><a href="./wuerfelwahrscheinlichkeit.html">Wahrscheinlichkeit mit Würfeln</a></p>
+                        <p class="mathmenue-item_on"><a href="./winkelzeichnen.html">Winkelarten</a></p>
+                        <p class="mathmenue-item_off"><a href="./dreiwuerfel.html">3 Würfel</a></p>
+                        <p class="mathmenue-item_off"><a href="./doppelwuerfel.html">Würfelwahrscheinlichkeit mit 2</a></p>
+                    </div>
+                </div>
+                <div id="sozcenter">
+                    <div id="CatOfArc"></div>
+                    <div id="aenderung"></div>
+                    
+                    <div id="theSlider">
+                        <input class="slider" id="mySlider" type="range" min="0" max="360" value="0">
+                    </div>
+                    <canvas id="arcArea" width="600" height="600">
+                        Your browser does not support the HTML5 canvas tag.</canvas>
+                        
+                        
+                        <div id="showReloadButton">
+                            <form name="onlyReloadSite"><input type="button" id="rButtonEingabe" value="Seite neu laden" onclick="location.reload(true)"/></form>
+                        </div>
+                </div>
+                <div id="sozrightside">
+                    <form>
+                        <input type="checkbox" id="showArcName" name="arcAreaShow" value="1">
+                        <label for="showArcName">Winkelarten anzeigen</label><br>
+                        <input type="checkbox" id="showTriangleArc" name="arcAreaShow" value="2">
+                        <label for="showTriangleArc">Winkelbereiche anzeigen</label>
+                    </form>
+                    <script>
+                        arcStart();
+                    </script>
+                    <noscript>Um dies anschauen zu können, muss JavaScript aktiviert sein.</noscript>
+                </div>
+            </div>
+            <div id="sozfoot"></div>
+        </div>
+    </body>
+</html>
